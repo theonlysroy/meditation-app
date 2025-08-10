@@ -1,14 +1,17 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Text, TextInput, TouchableOpacity } from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import { useAuth } from '../../context/AuthContext';
-import { useNavigation } from '@react-navigation/native';
-import { NavigationProps } from '../../navigation/types';
 
 const SignUpScreen: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const { signUp } = useAuth();
-  const navigation = useNavigation<NavigationProps>();
 
   const handleSignUp = async () => {
     try {
@@ -38,7 +41,7 @@ const SignUpScreen: React.FC = () => {
       <TouchableOpacity style={styles.button} onPress={handleSignUp}>
         <Text style={styles.buttonText}>Sign Up</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Auth', { screen: 'Login' })}>
+      <TouchableOpacity onPress={() => {}}>
         <Text>Already have an account? Sign In</Text>
       </TouchableOpacity>
     </View>

@@ -1,14 +1,7 @@
-import * as React from "react";
-import Svg, { SvgProps, Path, G } from "react-native-svg";
+import * as React from 'react';
+import Svg, { SvgProps, Path, G } from 'react-native-svg';
 const WelcomeVector = (props: SvgProps) => (
-  <Svg
-    width={333}
-    height={243}
-    viewBox="0 0 333 243"
-    fill="none"
-    xmlns="http://www.w3.org/2000/svg"
-    {...props}
-  >
+  <Svg width={333} height={243} viewBox="0 0 333 243" fill="none" {...props}>
     <Path
       d="M170.242 240.597C209.468 240.597 241.267 239.357 241.267 237.827C241.267 236.297 209.468 235.057 170.242 235.057C131.015 235.057 99.2156 236.297 99.2156 237.827C99.2156 239.357 131.015 240.597 170.242 240.597Z"
       fill="#F9F0E3"

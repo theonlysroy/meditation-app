@@ -10,7 +10,6 @@ const WelcomeBgFrame = (props: SvgProps) => (
     // viewBox="-2.5 -1 423 505"
     preserveAspectRatio="xMidYMid slice"
     fill="none"
-    xmlns="http://www.w3.org/2000/svg"
     {...props}
   >
     <G clipPath="url(#clip0_1_3662)">

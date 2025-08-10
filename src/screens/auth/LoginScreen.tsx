@@ -1,5 +1,11 @@
 import React, { useState } from 'react';
-import { View, StyleSheet, Text, TextInput, TouchableOpacity } from 'react-native';
+import {
+  View,
+  StyleSheet,
+  Text,
+  TextInput,
+  TouchableOpacity,
+} from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import { NavigationProps } from '../../navigation/types';
 import { useAuth } from '@/context/AuthContext';
@@ -24,7 +30,7 @@ const LoginScreen: React.FC = () => {
       <TextInput
         style={styles.input}
         placeholder="Email"
-        placeholderTextColor={"#000"}
+        placeholderTextColor={'#000'}
         value={email}
         onChangeText={setEmail}
         autoCapitalize="none"
@@ -32,7 +38,7 @@ const LoginScreen: React.FC = () => {
       <TextInput
         style={styles.input}
         placeholder="Password"
-        placeholderTextColor={"#000"}
+        placeholderTextColor={'#000'}
         value={password}
         onChangeText={setPassword}
         secureTextEntry
@@ -40,7 +46,7 @@ const LoginScreen: React.FC = () => {
       <TouchableOpacity style={styles.button} onPress={handleLogin}>
         <Text style={styles.buttonText}>Sign In</Text>
       </TouchableOpacity>
-      <TouchableOpacity onPress={() => navigation.navigate('Auth', { screen: 'SignUp' })}>
+      <TouchableOpacity onPress={() => navigation.navigate('Auth')}>
         <Text>Don't have an account? Sign Up</Text>
       </TouchableOpacity>
     </View>
